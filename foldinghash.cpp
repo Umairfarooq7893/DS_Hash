@@ -1,3 +1,4 @@
+// folding hash
 #include <iostream>
 using namespace std;
 int hash_folding(int key, int size) {
@@ -17,13 +18,11 @@ int main() {
     for (int i = 0; i < n; i++) {
         hash_values[i] = hash_folding(keys[i], size);
     }
-
     cout << "Folding Hash Values: ";
     for (int i = 0; i < n; i++) {
         cout << hash_values[i] << " ";
     }
     cout << endl;
-
     return 0;
 }
 
