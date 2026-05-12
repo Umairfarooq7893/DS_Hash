@@ -18,7 +18,7 @@ int main() {
     int keys[] = {15, 25, 35, 45};
     int n = sizeof(keys) / sizeof(keys[0]);
 
-    // ---------------- INSERTION ----------------
+    // INSERTION 
     for (int i = 0; i < n; i++) {
         int index = hashFunc(keys[i], size);  
         // Find index using hash function
@@ -27,7 +27,7 @@ int main() {
         // Insert key into that index's chain
     }
 
-    // ---------------- DISPLAY ----------------
+    // DISPLAY
     for (int i = 0; i < size; i++) {
         cout << "Index " << i << ": ";
 
