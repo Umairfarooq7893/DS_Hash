@@ -1,5 +1,3 @@
-// hash modulo programme
-
 #include <iostream>
 using namespace std;
 int hash_modulo(int key, int size) {

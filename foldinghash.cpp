@@ -1,14 +1,12 @@
-// folding hash
 #include <iostream>
 using namespace std;
 int hash_folding(int key, int size) {
     int sum = 0;
-    // Process the key 2 digits at a time from right to left
     while (key > 0) {
-        sum += key % 100;  // Get last 2 digits
-        key /= 100;        // Remove last 2 digits
+        sum += key % 100;  
+        key /= 100;       
+        return sum % size;
     }
-    return sum % size;
 }
 int main() {
     int keys[] = {12345, 67890, 24680};

@@ -4,10 +4,8 @@ using namespace std;
 int get_middle_two_digits(int num) {
     int square = num * num;
 
-    // Extract middle 2 digits from the square
-    // Assumes the square has at least 3 digits
     if (square < 100)
-    return square; // fallback if too small
+    return square;
 
     while (square >= 10000) {
         square /= 10;
